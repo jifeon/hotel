@@ -1,0 +1,25 @@
+{
+    "name": "hotel",
+    "version": "0.0.0",
+    "authors": [
+        "jifeon <balakirev.andrey@gmail.com>"
+    ],
+    "description": "simple site for hotel",
+    "main": "index.html",
+    "keywords": [
+        "hotel",
+        "bootstrap"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "3.1.0"
+    }
+}
