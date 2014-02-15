@@ -1,52 +1,182 @@
-html {
-    height: 100%;
-}
 
 body {
-    background-color: #4d4d4d;
-    height: 100%;
+    background-color : #4d3330;
 }
 
-h1 {
-    font-family: 'Merriweather', serif;
+.nav {
+    color : #dcdcdc;
+
+}
+
+h1, .navigation {
+    font-family : 'Merriweather', serif;
 }
 
 h1 a, h1 a:hover {
-    text-decoration: none;
-    color: #313131;
+    text-decoration : none;
+    color           : #313131;
 }
 
 h1 small {
-    border-top: 1px solid #E8E8E8;
-    color: #A09D9D;
-    display: block;
-    font-size: 10px;
-    letter-spacing: 4px;
-    line-height: 130%;
-    margin: 7px 0 0;
-    padding: 10px 0 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 212px;
+    border-top     : 1px solid #E8E8E8;
+    color          : #A09D9D;
+    display        : block;
+    font-size      : 10px;
+    letter-spacing : 4px;
+    line-height    : 130%;
+    margin         : 7px 0 0;
+    padding        : 10px 0 0;
+    text-align     : center;
+    text-transform : uppercase;
+    width          : 212px;
 }
 
 .navbar {
-    margin-bottom: 0;
-    min-height: 40px;
+    margin-bottom : 0;
+    min-height    : 40px;
+}
+
+.navbar-inverse {
+    background-color: #2d1713;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    padding: 10px 15px;
-    font-size: 13px;
-    color: #dcdcdc;
+    padding   : 10px 15px;
+    font-size : 13px;
+    color     : #dcdcdc;
 }
 
 .main-content {
-    background-color: white;
-    min-height: 100%;
-    padding: 15px 30px;
+    background-color : rgb(255, 244, 224);
+    min-height       : 100%;
+    padding          : 15px 30px;
 }
 
 .container {
-    box-shadow: -20px 0 20px rgba(0, 0, 0, 0.2), 20px 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow : -20px 0 20px rgba(0, 0, 0, 0.2), 20px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    font-size     : 18px;
+    margin-bottom : 0;
+}
+
+.navigation li {
+    display : block;
+    float   : right;
+    padding : 0 !important;
+    border-bottom : 3px solid transparent;
+}
+
+.navigation li:hover, .navigation li.active {
+    border-bottom : 3px solid #ffb64c;
+}
+
+.navigation a {
+    color           : #737373;
+    text-decoration : none;
+    padding         : 10px 20px;
+    margin          : 30px 0;
+    display         : block;
+    border-right    : 1px solid #e2e2e2;
+}
+
+.navigation li:first-child a {
+    border-right : 0;
+}
+
+.navigation li:hover a {
+    color : #313131;
+}
+
+.booking {
+    background  : url("../images/florencia2.jpg");
+    margin      : 0 -30px;
+    height      : 400px;
+    position    : relative;
+    padding-top : 40px;
+}
+
+.booking__form {
+    margin           : 0 0;
+    background-color : rgba(0, 0, 0, 0.80);
+    position         : absolute;
+    bottom           : 20px;
+    padding          : 15px 30px;
+    text-align       : center;
+    width            : 100%;
+}
+
+.booking .row {
+    margin : 20px;
+}
+
+.booking .row div {
+    background  : rgba(28, 28, 28, 0.7);
+    color       : #ffffff;
+    font-family : 'Merriweather', serif;
+    font-size   : 30px;
+    display     : inline-block;
+    padding     : 3px 15px;
+}
+
+.booking .row .booking__promo_2 {
+    background : rgba(88, 0, 8, 0.70);
+}
+
+.booking .row .booking__promo_3 {
+    background : rgba(255, 182, 76, 0.70);
+}
+
+.about_hotel .row {
+    margin-top : 30px;
+}
+
+.about_hotel .row-inverse {
+    background-color : #2d1713;
+    color: #ffffff;
+    margin : 15px -30px;
+    padding : 30px 30px;
+}
+
+.about_hotel .row-inverse .row {
+    /*margin : 0;*/
+}
+
+.about_hotel ul {
+    list-style   : outside url("../images/list1.png");
+    padding-left : 30px;
+}
+
+.about_hotel h3 {
+    border-bottom : 1px solid #E8E8E8;
+    margin        : 0 0 30px;
+    padding       : 0 0 12px;
+    position      : relative;
+}
+
+.about_hotel h3 .title_block {
+    bottom           : -3px;
+    display          : block;
+    height           : 3px;
+    left             : 0;
+    position         : absolute;
+    width            : 48px;
+    background-color : #ffb64c;
+}
+
+.promo {
+    border-left : 3px solid #ffb64c;
+    padding : 10px 15px;
+}
+
+.thumbnail {
+    border: 0;
+    border-radius: 0;
+    background-color : rgb(255, 244, 224);
+    padding : 5px;
+}
+
+.thumbnail h3 {
+    margin-bottom : 10px;
 }
