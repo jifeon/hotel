@@ -1,79 +1,362 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Гостиница "Флоренция"</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Hotel : " />
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="public/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+</head>
+<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<nav class="navbar navbar-static-top" role="navigation">
+    <div class="container navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand " href="#">Гостиница Флоренция</a>-->
+        </div>
 
-    <title>Hotel</title>
-  </head>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-  <body>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="skype:88334822300?call" title="Позвонить через Skype">
+                        <span class="glyphicon glyphicon-earphone"></span> 8 (83348) 22-3-00
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:inbox@example.com" title="Отправить письмо">
+                        <span class="glyphicon glyphicon-envelope"></span> inbox@example.com
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-map-marker"></span> Посмотреть карту
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jifeon/hotel">View on GitHub</a>
+<div class="container main-content">
 
-          <h1 id="project_title">Hotel</h1>
-          <h2 id="project_tagline"></h2>
+<div class="row menu">
+    <div class="col-md-6">
+        <h1><a href="#">Флоренция
+            <small>Гостиница</small>
+        </a></h1>
+    </div>
+    <div class="col-md-6">
+        <ul class="pull-right list-inline navigation">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О гостинице</a></li>
+            <li><a href="#">Номера</a></li>
+        </ul>
+    </div>
+</div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jifeon/hotel/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jifeon/hotel/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<div class="booking">
+    <div class="row">
+        <div class="col-md-offset-1">Уютные номера</div>
+    </div>
+    <div class="row">
+        <div class="booking__promo_2 col-md-offset-5">по комфортным ценам</div>
+    </div>
+    <div class="row">
+        <div class="booking__promo_3 col-md-offset-3">в городе Мураши</div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <form role="form" class="form-inline booking__form" action="#" autocomplete="off">
+        <div class="form-group date-picker input-append date">
+            <input type="text" data-format="dd.MM.yyyy" class="form-control" placeholder="Дата заезда">
+                <span class="add-on"> <i class="glyphicon glyphicon-calendar" data-time-icon="icon-time"
+                                         data-date-icon="icon-calendar"> </i> </span>
+        </div>
+        <div class="form-group date-picker input-append date">
+            <input type="text" data-format="dd.MM.yyyy" class="form-control" placeholder="Дата выезда">
+                <span class="add-on"> <i class="glyphicon glyphicon-calendar" data-time-icon="icon-time"
+                                         data-date-icon="icon-calendar"> </i> </span>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Телефон">
+        </div>
+        <button type="submit" class="btn btn-primary">Забронировать</button>
+    </form>
+</div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<div class="about_hotel">
+<div class="row">
+    <div class="col-md-7">
+        <h3>Номера гостиницы<span class="title_block"></span></h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        <p>В настоящее время в нашей гостинице действуют 9 номеров. На сайте представлены номера:
+        <ul>
+            <li>1 одноместный номер</li>
+            <li>3 двухместных номера</li>
+            <li>1 шестиместный номер</li>
+            <li>2 трехместных номера</li>
+            <li><em>В ГОСТИНИЦЕ ИМЕЕТСЯ НОМЕР С ДВУСПАЛЬНОЙ КРОВАТЬЮ</em></li>
+            <li>двухкомнатный номер повышенной комфортности</li>
+        </ul>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Hotel maintained by <a href="https://github.com/jifeon">jifeon</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div class="col-md-5">
+        <h3>В номерах<span class="title_block"></span></h3>
+
+        <p>Все номера имеют все необходимое для комфортного проживания наших гостей. В
+            каждом номере гостиницы имеется:
+        <ul>
+            <li>телевизоры (Спутниковое ТВ)</li>
+            <li>двуспальные либо односпальные кровати</li>
+            <li>чистое и свежее постельное белье и полотенца</li>
+            <li>(душ / санузел / раковина) на этаже</li>
+        </ul>
+    </div>
+</div>
+
+<div class="promo">
+    <p>Все номера находятся на втором этаже.
+        Номера нашей гостиницы - это уютные, комфортные, красивые комнаты. Мы внимательно следим за
+        качеством уборки
+        в номерах и холлах гостиницы.</p>
+
+    <p>Ещё одним привлекательным моментом гостиницы «ФЛОРЕНЦИЯ» являются цены. Остановившись у
+    нас, Вы выбираете радушное отношение по приемлемой цене.
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <h3>Номер "улучшенного типа"<span class="title_block"></span></h3>
+        <em>Цена номера "улучшенного типа" - 1000 руб. и 750 руб. за койко-место</em>
+
+        <p>Двухкомнатный номер повышенной комфортности включает в себя:
+        <ul class="col-md-6">
+            <li>две кровати</li>
+            <li>прикроватные тумбы</li>
+            <li>кресло</li>
+            <li>телевизор (Спутниковое ТВ)</li>
+            <li>обеденный стол со стульями</li>
+        </ul>
+        <ul class="col-md-6">
+            <li>шкаф-купе</li>
+            <li>холодильник</li>
+            <li>чайник</li>
+            <li>фен</li>
+            <li>душевая кабина, санузел в номере</li>
+        </ul>
     </div>
 
-    
+    <div class="col-md-5">
+        <h3>Стандартный номер<span class="title_block"></span></h3>
+        <em>Цена стандартного номера - 500руб. за койко-место</em>
 
-  </body>
+        <p>Стандартный номер включает в себя:
+        <ul>
+            <li>кровати</li>
+            <li>прикроватные тумбы</li>
+            <li>шкаф-купе</li>
+            <li>обеденный стол со стульями</li>
+            <li>телевизор (Спутниковое ТВ)</li>
+            <li>душевая кабина, санузел на этаже</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row-inverse">
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3>О гостинице<span class="title_block"></span></h3>
+
+            <p>Гостиница «ФЛОРЕНЦИЯ» расположена в удобной для гостей местности.
+                В 5 минутах ходьбы находятся: Россельхозбанк, Сбербанк, отделение связи, Центральный универмаг,
+                авто и ж/д вокзалы.</p>
+
+            <p>На территории нашей гостиницы Вы сможете оставить свой автомобиль (вставить фото стоянки)
+
+            <p>Забронировать номер Вы сможете, позвонив по телефону:
+                <a href="skype:88334822300?call" title="Позвонить через Skype">
+                    <span class="glyphicon glyphicon-earphone"></span> 8 (83348) 22-3-00
+                </a>
+        </div>
+        <div class="col-md-4">
+            <h3>Парковка<span class="title_block"></span></h3>
+
+            <p>На территории нашей гостиницы Вы сможете оставить свой автомобиль
+                <a href="#" class="thumbnail">
+                    <img src="public/images/outside/1_tmb.jpg" data-src="holder.js/100%x180" alt="парковка"/>
+                </a>
+        </div>
+    </div>
+
+    <div class="promo">Так же в нашей гостинице Вы можете воспользоваться доп. услугами: стирка, глажка, заказ
+        такси.
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Галлерея<span class="title_block"></span></h3>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="public/images/1/1.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+                <img src="public/images/2/1.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+
+            <div class="thumbnail">
+                <img src="public/images/3/1.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="thumbnail">
+                <img src="public/images/4/1.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="thumbnail">
+                <img src="public/images/5/2.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="thumbnail">
+                <img src="public/images/6/1.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="thumbnail">
+                <img src="public/images/7/1.jpg" data-src="holder.js/300x200" alt="">
+
+                <div class="caption">
+                    <h3>Стандартный номер</h3>
+                    <ul>
+                        <li>то</li>
+                        <li>сё</li>
+                        <li>пятое</li>
+                        <li>десятое</li>
+                    </ul>
+                    <p><a href="#" class="btn btn-primary" role="button">Посмотреть галлерею</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-7">
+        <h3>Контакты<span class="title_block"></span></h3>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bower_components/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="public/js/bootstrap-datetimepicker.min.js"></script>
+<script src="public/js/bootstrap-datetimepicker.ru.js"></script>
+<script src="public/js/indexPage.js"></script>
+</body>
 </html>
