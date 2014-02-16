@@ -45,10 +45,15 @@
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:inbox@example.com" title="Отправить письмо">
-                        <span class="glyphicon glyphicon-envelope"></span> inbox@example.com
+                    <a>
+                        <span class="glyphicon glyphicon-home"></span> г. Мураши, ул. Азина, д. 8
                     </a>
                 </li>
+                <!--<li>-->
+                    <!--<a href="mailto:inbox@example.com" title="Отправить письмо">-->
+                        <!--<span class="glyphicon glyphicon-envelope"></span> inbox@example.com-->
+                    <!--</a>-->
+                <!--</li>-->
                 <li>
                     <a href="#">
                         <span class="glyphicon glyphicon-map-marker"></span> Посмотреть карту
@@ -206,7 +211,7 @@
             <h3>Парковка<span class="title_block"></span></h3>
 
             <p>На территории нашей гостиницы Вы сможете оставить свой автомобиль
-                <a href="#" class="thumbnail">
+                <a href="public/images/outside/1.jpg" class="thumbnail" data-gallery>
                     <img src="public/images/outside/1_tmb.jpg" data-src="holder.js/100%x180" alt="парковка"/>
                 </a>
         </div>
@@ -379,21 +384,50 @@
     <div class="col-md-6">
         <h3>Контакты<span class="title_block"></span></h3>
 
-        <p>Гостиница «ФЛОРЕНЦИЯ» распологается по адресу
-        <address>Россия, Кировстая область, город Мураши, ул. Азина, д. 8</address>
+        <p>Tелефон:
+            <a href="skype:88334822300?call" title="Позвонить через Skype">
+                <span class="glyphicon glyphicon-earphone"></span> 8 (83348) 22-3-00
+            </a>
 
+        <p>
+        <address>Гостиница «ФЛОРЕНЦИЯ» распологается по адресу:
+            Россия, Кировстая область, город Мураши, ул. Азина, д. 8
+        </address>
         <div id="map"></div>
     </div>
 
     <div class="col-md-6">
         <h3>Обратная связь<span class="title_block"></span></h3>
 
+        <form role="form">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Введите номер телефона">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите email">
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea class="form-control" id="message" placeholder="Введите сообщение"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
 
     </div>
 
 </div>
 
 </div>
+<footer>
+    <span>&copy; Гостиница "Флоренция" 2014</span>
+</footer>
+
 </div>
 
 
