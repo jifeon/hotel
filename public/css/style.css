@@ -31,13 +31,23 @@ h1 small {
     width          : 212px;
 }
 
+footer {
+    margin : 30px -30px 0;
+    padding : 15px 30px;
+}
+
+footer span {
+    font-size : 14px;
+    color     : #ffffff;
+}
+
 .navbar {
     margin-bottom : 0;
     min-height    : 40px;
 }
 
-.navbar-inverse {
-    background-color: #2d1713;
+.navbar-inverse, footer {
+    background-color : #2d1713;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -49,7 +59,7 @@ h1 small {
 .main-content {
     background-color : rgb(255, 244, 224);
     min-height       : 100%;
-    padding          : 15px 30px;
+    padding          : 15px 30px 0;
 }
 
 .container {
@@ -62,9 +72,9 @@ h1 small {
 }
 
 .navigation li {
-    display : block;
-    float   : right;
-    padding : 0 !important;
+    display       : block;
+    float         : right;
+    padding       : 0 !important;
     border-bottom : 3px solid transparent;
 }
 
@@ -134,9 +144,9 @@ h1 small {
 
 .about_hotel .row-inverse {
     background-color : #2d1713;
-    color: #ffffff;
-    margin : 15px -30px;
-    padding : 30px 30px;
+    color            : #ffffff;
+    margin           : 15px -30px;
+    padding          : 30px 30px;
 }
 
 .about_hotel .row-inverse .row {
@@ -167,14 +177,14 @@ h1 small {
 
 .promo {
     border-left : 3px solid #ffb64c;
-    padding : 10px 15px;
+    padding     : 10px 15px;
 }
 
 .thumbnail {
-    border: 0;
-    border-radius: 0;
+    border           : 0;
+    border-radius    : 0;
     background-color : rgb(255, 244, 224);
-    padding : 5px;
+    padding          : 5px;
 }
 
 .thumbnail h3 {
@@ -183,4 +193,8 @@ h1 small {
 
 #map {
     height : 400px;
+}
+
+#message {
+    height: 190px;
 }
