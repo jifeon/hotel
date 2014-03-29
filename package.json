@@ -15,7 +15,8 @@
     },
     "dependencies": {
         "autodafe": "1.0.0",
-        "autodafe-http": "1.0.0"
+        "autodafe-http": "1.0.0",
+        "autodafe-mail": "1.0.0"
     },
     "engines": {
         "node": ">=0.10.0"
