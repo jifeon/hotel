@@ -11,6 +11,16 @@ $(function () {
         $(e.currentTarget).closest('.thumbnail').find('a[data-gallery]:first').click();
     });
 
+    $('form').ajaxForm({
+        success: function () {
+            alert('Сообщение успешно отправлено');
+        },
+        error: function () {
+            alert('Во время отправки сообщения произошла ошибка, повторите попытку позже');
+        },
+        resetForm: true
+    });
+
     var myLatLng = new google.maps.LatLng(59.397821,48.970585);
     var mapOptions = {
         center: myLatLng,
