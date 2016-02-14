@@ -1,6 +1,7 @@
 
 body {
     background-color : #4d3330;
+    min-width: 568px;
 }
 
 .nav {
@@ -197,4 +198,43 @@ footer span {
 
 #message {
     height: 190px;
+}
+
+@media (max-width : 992px) {
+    h1 {
+        text-align : center;
+    }
+
+    h1 small {
+        width : auto;
+    }
+
+    ul.navigation {
+        margin: auto;
+        width : 426px;
+        float: none !important;
+    }
+
+    ul.navigation li a {
+        margin: 0;
+    }
+
+    .booking__form__button {
+        margin-top : 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .booking .row {
+        /*display : inline-block;*/
+        margin : 10px;
+    }
+
+    .booking .row div {
+        font-size : 24px;
+    }
+
+    .booking .row div {
+        font-size : 14px;
+    }
 }

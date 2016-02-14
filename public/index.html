@@ -8,16 +8,14 @@
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="public/css/style.css" rel="stylesheet">
-    <link href="public/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="public/css/bootstrap-image-gallery.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4TnXt3Fo-BYTo7I-hu4ZOgkQ35W3FuKU&sensor=false&language=ru">
     </script>
-
-    <!--<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>-->
 </head>
 <body>
 
@@ -49,13 +47,8 @@
                         <span class="glyphicon glyphicon-home"></span> г. Мураши, ул. Азина, д. 8
                     </a>
                 </li>
-                <!--<li>-->
-                    <!--<a href="mailto:inbox@example.com" title="Отправить письмо">-->
-                        <!--<span class="glyphicon glyphicon-envelope"></span> inbox@example.com-->
-                    <!--</a>-->
-                <!--</li>-->
                 <li>
-                    <a href="#">
+                    <a href="#map">
                         <span class="glyphicon glyphicon-map-marker"></span> Посмотреть карту
                     </a>
                 </li>
@@ -76,9 +69,9 @@
     </div>
     <div class="col-md-6">
         <ul class="pull-right list-inline navigation">
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">О гостинице</a></li>
-            <li><a href="#">Номера</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#about">О гостинице</a></li>
+            <li><a href="#rooms">Номера</a></li>
         </ul>
     </div>
 </div>
@@ -88,33 +81,34 @@
         <div class="col-md-offset-1">Уютные номера</div>
     </div>
     <div class="row">
-        <div class="booking__promo_2 col-md-offset-5">по комфортным ценам</div>
+        <div class="booking__promo_2 col-xs-offset-5">по комфортным ценам</div>
     </div>
     <div class="row">
-        <div class="booking__promo_3 col-md-offset-3">в городе Мураши</div>
+        <div class="booking__promo_3 col-xs-offset-3">в городе Мураши</div>
     </div>
 
-    <form role="form" class="form-inline booking__form" action="#" autocomplete="off">
+    <form role="form" method="get" class="form-inline booking__form" action="/book" autocomplete="off">
         <div class="form-group date-picker input-append date">
-            <input type="text" data-format="dd.MM.yyyy" class="form-control" placeholder="Дата заезда">
+            <input type="text" data-format="dd.MM.yyyy" class="form-control" name="checkin" placeholder="Дата заезда">
                 <span class="add-on"> <i class="glyphicon glyphicon-calendar" data-time-icon="icon-time"
                                          data-date-icon="icon-calendar"> </i> </span>
         </div>
         <div class="form-group date-picker input-append date">
-            <input type="text" data-format="dd.MM.yyyy" class="form-control" placeholder="Дата выезда">
+            <input type="text" data-format="dd.MM.yyyy" class="form-control" name="checkout" placeholder="Дата выезда">
                 <span class="add-on"> <i class="glyphicon glyphicon-calendar" data-time-icon="icon-time"
                                          data-date-icon="icon-calendar"> </i> </span>
         </div>
         <div class="form-group">
-            <input type="number" class="form-control" placeholder="Телефон">
+            <input type="number" class="form-control" name="phone" placeholder="Телефон">
         </div>
-        <button type="submit" class="btn btn-primary">Забронировать</button>
+        <button type="submit" class="btn btn-primary booking__form__button">Забронировать</button>
     </form>
 </div>
 
 <div class="about_hotel">
 <div class="row">
     <div class="col-md-7">
+        <a name="rooms"></a>
         <h3>Номера гостиницы<span class="title_block"></span></h3>
 
         <p>В настоящее время в нашей гостинице действуют 9 номеров. На сайте представлены номера:
@@ -194,6 +188,7 @@
 
     <div class="row">
         <div class="col-md-8">
+            <a name="about"></a>
             <h3>О гостинице<span class="title_block"></span></h3>
 
             <p>Гостиница «ФЛОРЕНЦИЯ» расположена в удобной для гостей местности.
@@ -211,8 +206,8 @@
             <h3>Парковка<span class="title_block"></span></h3>
 
             <p>На территории нашей гостиницы Вы сможете оставить свой автомобиль
-                <a href="public/images/outside/1.jpg" class="thumbnail" data-gallery>
-                    <img src="public/images/outside/1_tmb.jpg" data-src="holder.js/100%x180" alt="парковка"/>
+                <a href="images/outside/1.jpg" class="thumbnail" data-gallery>
+                    <img src="images/outside/1_tmb.jpg" data-src="holder.js/100%x180" alt="парковка"/>
                 </a>
         </div>
     </div>
@@ -227,13 +222,13 @@
         </div>
         <div id="room1" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/1/1.jpg" data-gallery="#blueimp-gallery-room1">
-                    <img src="public/images/1/1.jpg" alt="">
+                <a href="images/1/1.jpg" data-gallery="#blueimp-gallery-room1">
+                    <img src="images/1/1.jpg" alt="">
                 </a>
-                <a href="public/images/1/2.jpg" data-gallery="#blueimp-gallery-room1"></a>
-                <a href="public/images/1/3.jpg" data-gallery="#blueimp-gallery-room1"></a>
-                <a href="public/images/1/4.jpg" data-gallery="#blueimp-gallery-room1"></a>
-                <a href="public/images/1/5.jpg" data-gallery="#blueimp-gallery-room1"></a>
+                <a href="images/1/2.jpg" data-gallery="#blueimp-gallery-room1"></a>
+                <a href="images/1/3.jpg" data-gallery="#blueimp-gallery-room1"></a>
+                <a href="images/1/4.jpg" data-gallery="#blueimp-gallery-room1"></a>
+                <a href="images/1/5.jpg" data-gallery="#blueimp-gallery-room1"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -250,10 +245,10 @@
 
         <div id="room2" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/2/1.jpg" data-gallery="#blueimp-gallery-room2">
-                    <img src="public/images/2/1.jpg" alt="">
+                <a href="images/2/1.jpg" data-gallery="#blueimp-gallery-room2">
+                    <img src="images/2/1.jpg" alt="">
                 </a>
-                <a href="public/images/2/2.jpg" data-gallery="#blueimp-gallery-room2"></a>
+                <a href="images/2/2.jpg" data-gallery="#blueimp-gallery-room2"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -270,10 +265,10 @@
 
         <div id="room3" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/3/1.jpg" data-gallery="#blueimp-gallery-room3">
-                    <img src="public/images/3/1.jpg" alt="">
+                <a href="images/3/1.jpg" data-gallery="#blueimp-gallery-room3">
+                    <img src="images/3/1.jpg" alt="">
                 </a>
-                <a href="public/images/3/2.jpg" data-gallery="#blueimp-gallery-room3"></a>
+                <a href="images/3/2.jpg" data-gallery="#blueimp-gallery-room3"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -290,11 +285,11 @@
 
         <div id="room4" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/4/1.jpg" data-gallery="#blueimp-gallery-room4">
-                    <img src="public/images/4/1.jpg" alt="">
+                <a href="images/4/1.jpg" data-gallery="#blueimp-gallery-room4">
+                    <img src="images/4/1.jpg" alt="">
                 </a>
-                <a href="public/images/4/2.jpg" data-gallery="#blueimp-gallery-room4"></a>
-                <a href="public/images/4/3.jpg" data-gallery="#blueimp-gallery-room4"></a>
+                <a href="images/4/2.jpg" data-gallery="#blueimp-gallery-room4"></a>
+                <a href="images/4/3.jpg" data-gallery="#blueimp-gallery-room4"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -311,11 +306,11 @@
 
         <div id="room5" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/5/2.jpg" data-gallery="#blueimp-gallery-room5">
-                    <img src="public/images/5/2.jpg" alt="">
+                <a href="images/5/2.jpg" data-gallery="#blueimp-gallery-room5">
+                    <img src="images/5/2.jpg" alt="">
                 </a>
-                <a href="public/images/5/1.jpg" data-gallery="#blueimp-gallery-room5"></a>
-                <a href="public/images/5/3.jpg" data-gallery="#blueimp-gallery-room5"></a>
+                <a href="images/5/1.jpg" data-gallery="#blueimp-gallery-room5"></a>
+                <a href="images/5/3.jpg" data-gallery="#blueimp-gallery-room5"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -332,13 +327,13 @@
 
         <div id="room6" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/6/1.jpg" data-gallery="#blueimp-gallery-room6">
-                    <img src="public/images/6/1.jpg" alt="">
+                <a href="images/6/1.jpg" data-gallery="#blueimp-gallery-room6">
+                    <img src="images/6/1.jpg" alt="">
                 </a>
-                <a href="public/images/6/2.jpg" data-gallery="#blueimp-gallery-room6"></a>
-                <a href="public/images/6/3.jpg" data-gallery="#blueimp-gallery-room6"></a>
-                <a href="public/images/6/4.jpg" data-gallery="#blueimp-gallery-room6"></a>
-                <a href="public/images/6/5.jpg" data-gallery="#blueimp-gallery-room6"></a>
+                <a href="images/6/2.jpg" data-gallery="#blueimp-gallery-room6"></a>
+                <a href="images/6/3.jpg" data-gallery="#blueimp-gallery-room6"></a>
+                <a href="images/6/4.jpg" data-gallery="#blueimp-gallery-room6"></a>
+                <a href="images/6/5.jpg" data-gallery="#blueimp-gallery-room6"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -355,14 +350,14 @@
 
         <div id="room7" class="col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <a href="public/images/7/1.jpg" data-gallery="#blueimp-gallery-room7">
-                    <img src="public/images/7/1_tmb.jpg" alt="">
+                <a href="images/7/1.jpg" data-gallery="#blueimp-gallery-room7">
+                    <img src="images/7/1_tmb.jpg" alt="">
                 </a>
-                <a href="public/images/7/2.jpg" data-gallery="#blueimp-gallery-room7"></a>
-                <a href="public/images/7/3.jpg" data-gallery="#blueimp-gallery-room7"></a>
-                <a href="public/images/7/4.jpg" data-gallery="#blueimp-gallery-room7"></a>
-                <a href="public/images/7/5.jpg" data-gallery="#blueimp-gallery-room7"></a>
-                <a href="public/images/7/6.jpg" data-gallery="#blueimp-gallery-room7"></a>
+                <a href="images/7/2.jpg" data-gallery="#blueimp-gallery-room7"></a>
+                <a href="images/7/3.jpg" data-gallery="#blueimp-gallery-room7"></a>
+                <a href="images/7/4.jpg" data-gallery="#blueimp-gallery-room7"></a>
+                <a href="images/7/5.jpg" data-gallery="#blueimp-gallery-room7"></a>
+                <a href="images/7/6.jpg" data-gallery="#blueimp-gallery-room7"></a>
 
                 <div class="caption">
                     <h3>Стандартный номер</h3>
@@ -382,6 +377,7 @@
 
 <div class="row">
     <div class="col-md-6">
+        <a name="contacts"></a>
         <h3>Контакты<span class="title_block"></span></h3>
 
         <p>Tелефон:
@@ -399,22 +395,22 @@
     <div class="col-md-6">
         <h3>Обратная связь<span class="title_block"></span></h3>
 
-        <form role="form">
+        <form role="form" method="get" action="/feedback">
             <div class="form-group">
                 <label for="name">Ваше имя</label>
-                <input type="text" class="form-control" id="name" placeholder="Введите имя">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя">
             </div>
             <div class="form-group">
                 <label for="phone">Номер телефона</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Введите номер телефона">
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Введите номер телефона">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Введите email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Введите email">
             </div>
             <div class="form-group">
                 <label for="message">Сообщение</label>
-                <textarea class="form-control" id="message" placeholder="Введите сообщение"></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Введите сообщение"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Отправить</button>
         </form>
@@ -471,13 +467,14 @@
 <script src="bower_components/jquery/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="public/js/bootstrap-datetimepicker.min.js"></script>
-<script src="public/js/bootstrap-datetimepicker.ru.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.ru.js"></script>
 
-<script src="public/js/jquery.blueimp-gallery.min.js"></script>
-<script src="public/js/bootstrap-image-gallery.min.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
 
-<script src="public/js/indexPage.js"></script>
+<script src="js/indexPage.js"></script>
 
 </body>
 </html>
