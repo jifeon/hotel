@@ -1,24 +1,8 @@
 {
-    "name": "hotel",
-    "description": "Simple site for hotel",
-    "keywords": ["hotel", "site", "autodafe"],
-    "version": "0.0.1",
-    "author": "Andrey Balakirev <balakirev.andrey@gmail.com>",
-    "main": "./index.js",
-    "bugs": {
-        "url": "https://github.com/jifeon/hotel/issues",
-        "email": "balakirev.andrey@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/jifeon/hotel.git"
-    },
-    "dependencies": {
-        "autodafe": "1.0.0",
-        "autodafe-http": "1.0.0",
-        "autodafe-mail": "1.0.0"
-    },
-    "engines": {
-        "node": ">=0.10.0"
-    }
+  "name": "hotel",
+  "description": "Simple site for hotel",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Andrey Balakirev <balakirev.andrey@gmail.com>",
+  "main": "./index.js"
 }
